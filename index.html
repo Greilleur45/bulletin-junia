@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bulletin JUNIA — Accueil</title>
+
+  <link rel="stylesheet" href="CSS/accueil/accueil.css" />
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="panel" aria-label="Accueil Bulletin JUNIA">
+      <div class="panel__inner">
+
+        <div class="neon" aria-label="JUNIA HEI">
+          <div class="word" id="wordJunia" aria-label="JUNIA">
+            <span class="letter" data-letter="J">J</span>
+            <span class="letter" data-letter="U">U</span>
+            <span class="letter" data-letter="N">N</span>
+            <span class="letter" data-letter="I">I</span>
+            <span class="letter" data-letter="A">A</span>
+          </div>
+
+          <div class="word" id="wordHei" aria-label="HEI">
+            <span class="letter alt" data-letter="H">H</span>
+            <span class="letter alt" data-letter="E">E</span>
+            <span class="letter alt" data-letter="I">I</span>
+          </div>
+        </div>
+
+        <p class="subtitle">Suivi de notes & bulletin</p>
+
+        <!-- ÉCRAN 1 : accueil -->
+        <div class="screen show" id="screenMain">
+          <div class="actions" id="actions">
+            <button class="btn primary" id="btnNew" type="button">
+              Créer un nouveau bulletin
+            </button>
+
+            <button class="btn secondary" id="btnOpen" type="button">
+              Visionner un bulletin existant (JSON)
+            </button>
+
+            <input class="file" id="fileJson" type="file" accept="application/json" />
+            <p class="hint">Importe ton export JSON, puis l’app s’ouvre directement.</p>
+          </div>
+        </div>
+
+        <!-- ÉCRAN 2 : choix spécialité -->
+        <div class="screen" id="screenSpec" aria-label="Choix de spécialité">
+          <h2 class="screenTitle">Choisis ta spécialité</h2>
+
+          <div class="choiceGrid" role="list">
+            <button class="choiceCard aero" type="button" data-spec="Aéronautique" role="listitem">
+              <div class="choiceTitle">Aéronautique</div>
+            </button>
+
+            <button class="choiceCard meca" type="button" data-spec="Mécatronique Robotique" role="listitem">
+              <div class="choiceTitle">Mécatronique Robotique</div>
+            </button>
+          </div>
+
+          <div class="specFooter">
+            <button class="btn ghost" id="btnBack" type="button">Retour</button>
+            <button class="btn primary" id="btnSpecContinue" type="button" disabled>
+              Continuer
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="JS/accueil/accueil.js"></script>
+</body>
+</html>
