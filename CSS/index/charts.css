@@ -1,9 +1,0 @@
-.chart-card .card__head{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:12px;
-    padding: 14px 14px 0 14px;
-  }
-  .card__title{ font-weight: 900; display:flex; gap: 10px; align-items:center; }
-  .card__body{ padding: 12px 14px 14px 14px; }  
